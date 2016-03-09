@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//SEASAR//DTD S2Container 2.4//EN" 
+	"http://www.seasar.org/dtd/components24.dtd">
+<components>
+  <include path="convention.dicon"/>
+  <include path="aop.dicon"/>
+  
+  <!-- 追記ここから -->
+  <include path="s2config-core.dicon"/>
+  <component name="configContainer" class="org.seasar.config.core.container.impl.StrictConfigContainer">
+    <arg>
+      <component class="org.seasar.config.core.container.impl.ConfigContainerImpl" autoBinding="none"/>
+    </arg>
+    <!-- read config.properties file -->
+    <property name="configName">"example"</property>
+  </component>
+  <!-- 追記ここまで -->
+  
+</components>
