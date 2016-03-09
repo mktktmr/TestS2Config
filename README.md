@@ -1,4 +1,5 @@
 # TestS2Config
+
 S2Config（というかjarのクラスパスで）でハマったので。。。
 
 ## プロジェクトの雛形作成
@@ -35,7 +36,7 @@ maven install
 
 詳しくはpom.xml参照（雑）。
 
-ちなみにjarファイルはzipと同じ形式の圧縮ファイルなので、unzipなどで
+ちなみにjarファイルはzipと同じ形式の圧縮ファイルなので、unzipなどで展開できます。
 
 ```
 $ unzip -d TestS2Config TestS2Config-0.0.1.jar
